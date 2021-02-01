@@ -1,0 +1,55 @@
+
+.flexItem {
+  background: #ffffff;
+  font-size: 2.5rem;
+  // color: #fff;
+  margin: 5px;
+  width: 350px;
+  height: 500px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+  .userImage {
+    height: 50%;
+    img {
+      margin-left: 0px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+.userName {
+  display: flex;
+  h1 {
+    font-size: 16px;
+    color: white;
+  }
+  .copySvg {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    color: rgb(68, 118, 255);
+  }
+  span {
+    font-size: 14px;
+  }
+}
+
+.userInfo {
+  margin: 12px;
+  h1 {
+    font-size: 13px;
+    color: grey;
+  }
+  a {
+    font-size: 16px;
+  }
+  hr {
+    height: 0.5px;
+    background-color: rgb(165, 165, 165);
+    border: none;
+
+  }
+}

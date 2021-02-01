@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+	// background: #9CC5FF;
+  padding: 5px;
+  // border: 2px dotted rgb(96, 139, 168);
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.viewMenu {
+  display: flex;
+  button {
+    margin-left: auto;
+  }
+}
+
+
+

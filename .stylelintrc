@@ -1,0 +1,56 @@
+{
+  "syntax": "scss",
+  "extends": [
+    "stylelint-a11y/recommended"
+  ],
+  "plugins": [
+    "stylelint-a11y",
+    "stylelint-scss",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "function",
+        "if",
+        "else",
+        "each",
+        "include",
+        "mixin",
+        "return",
+        "warn"
+      ]
+    }],
+    "selector-type-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignorePseudoClasses": ["global"]
+    }],
+    "selector-class-pattern": "^[a-z_-]+$",
+    "selector-id-pattern": "^[a-z_-]+$",
+    "string-quotes": "single",
+    "unit-case": "lower",
+    "property-case": "lower",
+    "value-keyword-case": "lower",
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "color-function-notation": "modern",
+    "number-max-precision": 2,
+    "function-calc-no-invalid": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "unit-no-unknown": true,
+    "property-no-unknown": true,
+    "declaration-block-no-duplicate-properties": true,
+    "length-zero-no-unit": true,
+    "shorthand-property-no-redundant-values": true,
+    "value-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "at-rule-no-vendor-prefix": true,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-no-important": true,
+    "no-empty-first-line": true,
+    "max-empty-lines": 1
+  }
+}

@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+html,
+body,
+#root {
+  font-family: font(Roboto);
+  font-size: 10px;
+  height: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+// TODO: DELETE
+// *******************************************************************************************
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+// *******************************************************************************************
+
+:root {
+  @each $name, $font in $fonts {
+    --font-#{$name}: #{$font};
+  }
+
+  @each $name, $color in $colors {
+    @if type-of($color) == 'map' {
+      @each $subname, $subcolor in $color {
+        --color-#{$name}-#{$subname}: #{$subcolor};
+      }
+    } @else {
+      --color-#{$name}: #{$color};
+    }
+  } @each $name, $size in $sizes {
+    @if type-of($size) == 'map' {
+      @each $subname, $subsize in $size {
+        --size-#{$name}-#{$subname}: #{$subsize};
+      }
+    } @else if type-of($size) == 'number' {
+      --size-#{$name}: #{$size};
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.box {
+  background-color: #fafafa;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10px;
+}
+
+.boxContent {
+  background-color: #ffffff;
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.collectionSize {
+  p{
+    font-size: 14px;
+    color: grey;
+    margin-left: 10px;
+  }
+  span {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
+
+.statisticBox {
+  display: flex;
+}
+
+.males {
+  display: flex;
+  p{
+    font-size: 14px;
+    color: grey;
+    margin-left: 10px;
+  }
+  span {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
+
+.nationBox {
+  margin-top: 50px;
+  p {
+    font-size: 14px;
+    color: grey
+  }
+}

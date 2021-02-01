@@ -1,0 +1,51 @@
+.searchPanel {
+  background-color: #fafafa;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+
+  .inputName {
+    margin-right: 10px;
+    border-radius: 1px;
+    width: 70vh;
+    height: 35px;
+    font-size: 15px;
+  }
+  .genderSelect {
+    width: 20vh;
+    margin-right: 10px;
+    :global {
+      .css-g1d714-ValueContainer {
+        font-size: 15px;
+      }
+    }
+  }
+  .nationalitySelect {
+    width: 30vh;
+    :global {
+      .css-g1d714-ValueContainer {
+        font-size: 15px;
+      }
+    }
+  }
+  button {
+    margin-left: auto;
+
+  }
+}
+
+.inputCheck {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  .checkbox {
+    margin-right: 10px;
+  }
+}

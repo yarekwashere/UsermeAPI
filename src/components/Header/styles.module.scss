@@ -1,0 +1,26 @@
+.links {
+  font-size: 15px;
+}
+
+.reactImg {
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(51,51,51,.33);
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 26px;
+}
+

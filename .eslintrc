@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "worker": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./src"]
+        ],
+        "extensions": [".js", ".jsx", ".json"]
+      }
+    }
+  },
+  "extends": [
+    "react-app",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:jsx-a11y/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:promise/recommended",
+    "prettier",
+    "prettier/react",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "optimize-regex",
+    "sonarjs",
+    "no-loops",
+    "promise",
+    "prettier"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "sonarjs/no-small-switch": "off"
+  }
+}
