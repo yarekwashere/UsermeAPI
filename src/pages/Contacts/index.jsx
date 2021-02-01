@@ -15,7 +15,7 @@ import st from './styles.module.scss';
 export default function Contacts() {
   const dispatch = useDispatch();
   const [filters, setFilters] = useState({});
-  const [tab, setTab] = useState(true);
+  // const [tab, setTab] = useState(true);
   const data = useSelector(getContactsSelector);
   const countries = data && [
     ...new Set(data.map((item) => item.location.country)),
@@ -53,7 +53,7 @@ export default function Contacts() {
       <div className={st.content}>
         <div className={st.viewMenu}>
           <h1>Contacts</h1>
-          <button onClick={() => console.log(setTab(!tab))}>tab view</button>
+          {/* <button onClick={() => console.log(setTab(!tab))}>tab view</button> */}
         </div>
         <SearchPanel
           handleFullName={handleFullName}
