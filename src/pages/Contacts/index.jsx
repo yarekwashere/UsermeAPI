@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContactsSelector } from '@/redux/selectors';
 import '../../assets/images/logo512.png';
-import { debounce, filter } from 'lodash';
+import { debounce } from 'lodash';
 import Header from '@/components/Header';
 import SearchPanel from '@/components/SearchPanel';
 import User from '@/components/User';
